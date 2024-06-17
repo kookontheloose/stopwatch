@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" type="text/css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <title>stop watch</title>
+  </head>
+  <body>
+    <video id="background-video" autoplay loop muted>
+      <source src="resources/outerspace.mp4" type="video/mp4" />
+    </video>
+
+    <div class="stopwatch">
+      <h1 id="displayTime">00:00:00</h1>
+      <div class="buttons">
+        <img src="resources/stopWhite.png" onclick="watchStop()" />
+        <img
+          id="playBtn"
+          src="resources/playWhite.png"
+          onclick="watchStart()"
+        />
+        <img id="lapBtn" src="resources/lapWhite2.png" onclick="lap()" />
+        <img src="resources/resetWhite2.png" onclick="watchReset()" />
+      </div>
+    </div>
+
+    <div id="lapSection">
+      <h1>Laps:</h1>
+      <div id="laps">
+        <p id="lapRecord"></p>
+      </div>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>
