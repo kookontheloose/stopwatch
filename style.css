@@ -45,7 +45,7 @@ body {
 }
 
 .buttons img {
-  width: 50px;
+  width: 40px;
   margin: 0 20px;
   cursor: pointer;
 }
@@ -59,8 +59,4 @@ body {
 #lap {
   font-size: 40px;
   color: white;
-}
-
-#playBtn {
-  width: 55px;
 }
